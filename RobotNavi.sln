@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RobotNavi", "RobotNavi\RobotNavi.vcproj", "{644F8696-CAFD-4AB2-B01E-FDC778106389}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SocketDLL", "SocketDLL\SocketDLL.vcproj", "{22067A1E-7A57-48BA-9833-114370D62378}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SLAMDLL", "SLAMDLL\SLAMDLL.vcproj", "{5E890EAC-E38D-43F8-91EF-3CA9BF4891FA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JoyStickDLL", "JoyStickDLL\JoyStickDLL.vcproj", "{62786821-BB47-4C5A-B9C4-2D2B78340E43}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NavDLL", "NavDLL\NavDLL.vcproj", "{A7799290-5A73-4CC0-A076-47B1979DBF42}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FilterDLL", "FilterDLL\FilterDLL.vcproj", "{2C43500F-C4D4-42FB-89A4-0802CB1967CE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "POMDPDLL", "POMDPDLL\POMDPDLL.vcproj", "{3BF85D5A-69C5-4928-976D-523EFEE9BFA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{644F8696-CAFD-4AB2-B01E-FDC778106389}.Debug|Win32.ActiveCfg = Debug|Win32
+		{644F8696-CAFD-4AB2-B01E-FDC778106389}.Debug|Win32.Build.0 = Debug|Win32
+		{644F8696-CAFD-4AB2-B01E-FDC778106389}.Release|Win32.ActiveCfg = Release|Win32
+		{644F8696-CAFD-4AB2-B01E-FDC778106389}.Release|Win32.Build.0 = Release|Win32
+		{22067A1E-7A57-48BA-9833-114370D62378}.Debug|Win32.ActiveCfg = Debug|Win32
+		{22067A1E-7A57-48BA-9833-114370D62378}.Debug|Win32.Build.0 = Debug|Win32
+		{22067A1E-7A57-48BA-9833-114370D62378}.Release|Win32.ActiveCfg = Release|Win32
+		{22067A1E-7A57-48BA-9833-114370D62378}.Release|Win32.Build.0 = Release|Win32
+		{5E890EAC-E38D-43F8-91EF-3CA9BF4891FA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5E890EAC-E38D-43F8-91EF-3CA9BF4891FA}.Debug|Win32.Build.0 = Debug|Win32
+		{5E890EAC-E38D-43F8-91EF-3CA9BF4891FA}.Release|Win32.ActiveCfg = Release|Win32
+		{5E890EAC-E38D-43F8-91EF-3CA9BF4891FA}.Release|Win32.Build.0 = Release|Win32
+		{62786821-BB47-4C5A-B9C4-2D2B78340E43}.Debug|Win32.ActiveCfg = Debug|Win32
+		{62786821-BB47-4C5A-B9C4-2D2B78340E43}.Debug|Win32.Build.0 = Debug|Win32
+		{62786821-BB47-4C5A-B9C4-2D2B78340E43}.Release|Win32.ActiveCfg = Release|Win32
+		{62786821-BB47-4C5A-B9C4-2D2B78340E43}.Release|Win32.Build.0 = Release|Win32
+		{A7799290-5A73-4CC0-A076-47B1979DBF42}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A7799290-5A73-4CC0-A076-47B1979DBF42}.Debug|Win32.Build.0 = Debug|Win32
+		{A7799290-5A73-4CC0-A076-47B1979DBF42}.Release|Win32.ActiveCfg = Release|Win32
+		{A7799290-5A73-4CC0-A076-47B1979DBF42}.Release|Win32.Build.0 = Release|Win32
+		{2C43500F-C4D4-42FB-89A4-0802CB1967CE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2C43500F-C4D4-42FB-89A4-0802CB1967CE}.Debug|Win32.Build.0 = Debug|Win32
+		{2C43500F-C4D4-42FB-89A4-0802CB1967CE}.Release|Win32.ActiveCfg = Release|Win32
+		{2C43500F-C4D4-42FB-89A4-0802CB1967CE}.Release|Win32.Build.0 = Release|Win32
+		{3BF85D5A-69C5-4928-976D-523EFEE9BFA7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3BF85D5A-69C5-4928-976D-523EFEE9BFA7}.Debug|Win32.Build.0 = Debug|Win32
+		{3BF85D5A-69C5-4928-976D-523EFEE9BFA7}.Release|Win32.ActiveCfg = Release|Win32
+		{3BF85D5A-69C5-4928-976D-523EFEE9BFA7}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

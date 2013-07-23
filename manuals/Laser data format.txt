@@ -1,0 +1,5 @@
+1. 一組data只存一行, 用空格分開, \n表示下一組data
+
+2. 前三個數字表示dx,dy,dth, 是從上一筆data到下一筆data間機器人的位置改變
+
+3. 之後就是Laser raw reading

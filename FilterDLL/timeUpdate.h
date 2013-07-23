@@ -1,0 +1,1 @@
+void _declspec(dllexport)  timeUpdate(CvMat TmeanM, CvMat TsigmaM);

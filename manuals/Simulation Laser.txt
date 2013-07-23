@@ -1,0 +1,26 @@
+  sick.runAsync();//Start Laser
+
+  if (!sick.blockingConnect())
+  {
+    printf("Couldn't connect to sick, exiting\n");
+    Aria::shutdown();
+    return ;
+  }
+
+
+void getLaser(ArSick *thisLaser, ObsArray& obs)
+{
+const std::list<ArSensorReading *> *readingsList; // Instantiate a list of sensor readings
+std::list<ArSensorReading *>::const_iterator it; // Instantiate an iterator object for the list
+int i = -1; // Loop counter for readings
+readingsList = thisLaser->getRawReadings(); // Get the list of readings
+for (it = readingsList->begin(); it != readingsList->end(); it++) // Loop through readings
+{
+i++;
+/*
+cout << "Laser reading " << i << " = " << (*it)->getRange() << " Angle " << i << " = " <<
+(*it)->getSensorTh() << "\n";*/
+obs.set_obs_laser((*it)->getRange(),(*it)->getSensorTh());
+
+}
+}

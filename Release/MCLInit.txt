@@ -1,0 +1,2 @@
+-3 3 0 4 4 180 500
+(mean.x, mean.y, mean.phi(degree),sigma.x,sigma.y,sigma.phi(degree), particle number)

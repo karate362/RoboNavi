@@ -1,0 +1,509 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Taiwan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\RobotNavi.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "..\\src\\nanoha1.bmp"
+IDB_BITMAP2             BITMAP                  "..\\src\\nanoha2.bmp"
+IDB_BITMAP3             BITMAP                  "..\\src\\nanoha3.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ROBOT DIALOGEX 0, 0, 392, 268
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,335,34,50,14
+    PUSHBUTTON      "Connect",IDC_CONNECT,274,35,47,15
+    PUSHBUTTON      "Stick Control",IDC_STICK,277,57,47,12
+    EDITTEXT        IDC_EDIT1,237,197,80,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,236,218,149,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Laser start",IDC_LASER,277,79,46,15
+    EDITTEXT        IDC_EDIT3,236,236,66,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Test DWA",IDC_BUTTON2,276,15,50,14
+    PUSHBUTTON      "Save",IDC_SaveLaser,347,15,38,12
+    PUSHBUTTON      "Reset Pose",IDC_REODE,339,102,46,11
+    PUSHBUTTON      "MCL Start",IDC_MCLSTART,343,82,42,13
+    PUSHBUTTON      "AutoRun",IDC_Navi,272,103,48,15
+    PUSHBUTTON      "Cancel",IDCANCEL,335,57,50,14
+    GROUPBOX        "Sensor",IDC_STATIC,240,147,61,43
+    CONTROL         "Sim Laser",IDC_RADIOS1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,244,155,50,15
+    CONTROL         "LMS100",IDC_RADIOS2,"Button",BS_AUTORADIOBUTTON,244,171,45,15
+    PUSHBUTTON      "DATMO",IDC_DATMO,335,123,42,11
+    PUSHBUTTON      "SLAM start",IDC_SLAM,335,146,39,14
+    PUSHBUTTON      "Button1",IDC_BUTTON1,336,169,36,13
+    PUSHBUTTON      "AutoRun2",IDC_Navi2,270,119,51,15
+    PUSHBUTTON      "Run (Const)",IDC_Navi3,267,134,54,15
+END
+
+IDD_LASER DIALOGEX 0, 0, 372, 211
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,315,90,50,14
+    PUSHBUTTON      "Disconnect",IDCLOSE,315,29,50,14
+    PUSHBUTTON      "Connect",IDC_CONNNECT,316,7,47,17
+    PUSHBUTTON      "Single",IDC_SINGLE,315,49,50,14
+    PUSHBUTTON      "Continuous",IDC_CONT,315,68,50,14
+    EDITTEXT        IDC_EDIT1,27,180,48,15,ES_AUTOHSCROLL
+    LTEXT           "Read time(ms)",IDC_STATIC,27,164,53,17
+    CONTROL         "",IDC_STATEPIC,"Static",SS_BLACKFRAME,257,111,108,93
+    PUSHBUTTON      "Record",IDC_SaveLaser,245,16,37,14
+    CONTROL         "Cont record",IDC_RECORD,"Button",BS_AUTORADIOBUTTON,255,69,56,14
+END
+
+IDD_MAP DIALOGEX 0, 0, 353, 202
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,205,181,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,296,181,50,14
+    PUSHBUTTON      "Draw",IDC_DRAWMAP,225,128,45,15
+    PUSHBUTTON      "Save GMAP",IDC_SaveGMAP,293,127,42,13
+    PUSHBUTTON      "DrawLMAP",IDC_LMAP,228,151,41,14
+    EDITTEXT        IDC_EDIT1,289,152,50,11,ES_AUTOHSCROLL
+    PUSHBUTTON      "Load GMAP",IDC_LoadGMAP,293,109,43,13
+    PUSHBUTTON      "MCLINIT",IDC_MCLINIT,230,20,35,13
+    PUSHBUTTON      "DOMCL",IDC_DOMCL,283,22,38,12
+    PUSHBUTTON      "On paint",IDC_BUTTON1,233,47,38,14
+    PUSHBUTTON      "Save image",IDC_SaveImg,227,76,42,16
+END
+
+IDD_JOYDLG DIALOGEX 0, 0, 324, 191
+STYLE DS_SETFONT | DS_MODALFRAME | DS_NOIDLEMSG | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,205,170,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,267,170,50,14
+    EDITTEXT        IDC_EDIT1,251,21,30,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,251,39,30,15,ES_AUTOHSCROLL
+    LTEXT           "X",IDC_STATIC,233,23,13,13
+    LTEXT           "Y",IDC_STATIC,233,40,10,13
+    EDITTEXT        IDC_EDIT3,224,94,75,14,ES_AUTOHSCROLL
+    LTEXT           "System message",IDC_STATIC,224,78,76,13
+END
+
+IDD_DATMO DIALOGEX 0, 0, 336, 193
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,205,172,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,279,172,50,14
+    EDITTEXT        IDC_EDIT1,65,172,69,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "DoDATMO",ID_DODATMO,213,142,50,16
+    EDITTEXT        IDC_EDIT4,173,14,42,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,219,14,44,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,174,35,42,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,221,34,43,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,138,15,34,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,138,36,35,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT11,139,58,35,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT12,139,78,37,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT13,140,100,37,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,175,57,41,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,222,57,42,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,178,79,39,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT14,224,79,40,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT15,178,99,39,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT16,225,100,40,14,ES_AUTOHSCROLL
+END
+
+IDD_NAVDLG DIALOGEX 0, 0, 320, 200
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,209,179,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,263,179,50,14
+    PUSHBUTTON      "Compute",IDC_Compute,101,176,37,17
+    EDITTEXT        IDC_EDIT1,7,175,86,18,ES_AUTOHSCROLL
+    PUSHBUTTON      "Tree search",IDC_Expand,149,179,50,14
+    EDITTEXT        IDC_EDIT2,211,163,46,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,262,163,49,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "OfflineTest",IDC_OFFLINE,266,103,40,16
+    PUSHBUTTON      "Save Img",IDC_SaveImg,213,132,42,13
+    PUSHBUTTON      "OfflineTest2",IDC_OFFLINE2,265,128,40,16
+    PUSHBUTTON      "Button1",IDC_POMDP,215,104,39,17
+END
+
+IDD_ICP DIALOGEX 0, 0, 376, 226
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,205,205,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,319,205,50,14
+    PUSHBUTTON      "Read",IDC_Read,329,115,40,19
+    PUSHBUTTON      "Refreash",IDC_Refresh,329,92,40,15
+    PUSHBUTTON      "DOICP",IDC_DOICP,331,145,38,18
+    EDITTEXT        IDC_EDIT1,201,178,159,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "Save Image",IDC_SaveImg,306,62,63,18
+    PUSHBUTTON      "DOICP_CONT",IDC_DOICP_CONT,247,136,64,17
+    PUSHBUTTON      "DOMICP",IDC_DOMICP,273,92,38,18
+    PUSHBUTTON      "DOMICP_CONT",IDC_DOMICP_CONT,247,156,64,17
+    PUSHBUTTON      "DOODO_CONT",IDC_DOODO_CONT,248,115,64,17
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ROBOT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 385
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 261
+    END
+
+    IDD_LASER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 365
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 204
+    END
+
+    IDD_MAP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 346
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_JOYDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 317
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_DATMO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 329
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+
+    IDD_NAVDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_ICP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 369
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 219
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About RobotNavi"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "RobotNavi, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2010",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\RobotNavi.ico"
+IDR_RobotNaviTYPE       ICON                    "res\\RobotNaviDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Robot Start",                 ID_FILE_ROBOTSTART
+        MENUITEM "Laser Start",                 ID_FILE_LASERSTART
+        MENUITEM "ICP Start",                   ID_FILE_ICPSTART
+        MENUITEM "Draw MAP",                    ID_FILE_DRAWMAP
+        MENUITEM "Joy Stick Start",             ID_FILE_JOYSTICKSTART
+        MENUITEM "Navi Start",                  ID_FILE_NAVISTART
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About RobotNavi...",         ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "RobotNavi.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "RobotNavi.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\RobotNavi.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
