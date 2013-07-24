@@ -34,8 +34,6 @@ RobotDlg::~RobotDlg()
 
 void RobotDlg::EndDlg(){
 
-
-	
 	EndThread(hThread,IsThread);
 	EndThread(hThread2,IsThread2);
 
@@ -51,8 +49,6 @@ void RobotDlg::EndDlg(){
 
 	if(ndlg)
 		ndlg->EndDialog(0);*/
-	if(ddlg)
-		ddlg->EndDialog(0);
 
 	if(laserpt)
 		this->StopLaser(laserpt); //problems
@@ -119,12 +115,7 @@ void RobotDlg::JoyVel(int x, int y){
 //Laser functions
 void RobotDlg::StartLaserThread(){
 
-
-
 	EndThread(hThread2,IsThread2);
-
-
-
 
 	IsThread2 = true;
 	hThread2=CreateThread(NULL,0, LASER_THREAD,(LPVOID)this, 0,&dwThreadID2);//thread start
@@ -346,20 +337,6 @@ void RobotDlg::OnBnClickedLaser()
 
 void RobotDlg::OnBnClickedDatmo()
 {
-	// TODO: Add your control notification handler code here
-
-	idlg = new ICPDlg();
-	idlg->Create(IDD_ICP);
-	idlg->ShowWindow(1);
-
-	ddlg = new DATMODlg();
-	ddlg->Create(IDD_DATMO);
-	ddlg->ShowWindow(1);
-	
-
-	EndThread(hThread5,IsThread5);
-	IsThread5 = true;
-	hThread5=CreateThread(NULL,0, DATMO_THREAD,(LPVOID)this, 0,&dwThreadID5);//thread start
 }
 
 void RobotDlg::OnBnClickedSlam()
@@ -378,15 +355,10 @@ void RobotDlg::OnBnClickedButton1()
 	idlg->Create(IDD_ICP);
 	idlg->ShowWindow(1);
 
-	ddlg = new DATMODlg();
-	ddlg->Create(IDD_DATMO);
-	ddlg->ShowWindow(1);
 
-
-	EndThread(hThread5,IsThread5);
-	IsThread5 = true;
-	hThread5=CreateThread(NULL,0, DATMO_THREAD_OFFLINE,(LPVOID)this, 0,&dwThreadID5);//thread start
-
+	//EndThread(hThread5,IsThread5);
+	//IsThread5 = true;
+	//hThread5=CreateThread(NULL,0, DATMO_THREAD_OFFLINE,(LPVOID)this, 0,&dwThreadID5);//thread start
 
 }
 

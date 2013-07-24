@@ -25,6 +25,7 @@ TraTree::~TraTree(void)
 {
 }
 
+/*
 void TraTree::PureExpand(VELnode &bestnode){
 
 	if(tranobs.size() != obsarr.size()) //transfer the obstacles
@@ -59,7 +60,7 @@ void TraTree::PureExpand(VELnode &bestnode){
 
 
 }
-
+*/
 
 void TraTree::ExpandNewNodes(VHnode &bestidx,std::vector<OBS> &obsarr){// obsarr has been transformed to the robot coordinate
 

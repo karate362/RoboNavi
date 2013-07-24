@@ -99,7 +99,7 @@ public:
 	void ExpandNewNodes(VHnode &bestnode,vector<OBS>& obsarr);
     void TraSearch(vector<OBS>& initobs,double& rv,double& rw, double lgx,double lgy,int MaximumNodes);//
 
-	void PureExpand(VELnode &nx);
+	//void PureExpand(VELnode &nx);
 
     double (*Setg)(VELnode& nd,void* datapt);//Funcpt
 	double (*Seth)(VELnode& nd,void* datapt);//Funcpt
@@ -121,8 +121,6 @@ private:
 	priority_queue<VHnode, vector<VHnode>, VHCmp> VelHeap;
 	vector <VELnode> bestpath;
 
-	ObsArray obsarr;
-	
 	vector<OBS> tranobs;
 
 	double smoothness;

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="RobotNavi">
+</Property><Property Name="Solution File" Value="C:\ChihChung\RoboNavi\RobotNavi\RobotNavi.sln">
+</Property><Property Name="Date" Value="2013年7月23日">
+</Property><Property Name="Time" Value="上午 10:00">
+</Property></Properties><Event ErrorLevel="0" Project="RobotNavi" Source="RobotNavi\RobotNavi.vcproj" Description="Converting project file 'C:\ChihChung\RoboNavi\RobotNavi\RobotNavi\RobotNavi.vcproj'.">
+</Event><Event ErrorLevel="1" Project="RobotNavi" Source="RobotNavi\RobotNavi.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="RobotNavi" Source="RobotNavi\RobotNavi.vcproj" Description="Done converting to new project file 'C:\ChihChung\RoboNavi\RobotNavi\RobotNavi\RobotNavi.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="RobotNavi" Source="RobotNavi\RobotNavi.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SocketDLL" Source="SocketDLL\SocketDLL.vcproj" Description="Converting project file 'C:\ChihChung\RoboNavi\RobotNavi\SocketDLL\SocketDLL.vcproj'.">
+</Event><Event ErrorLevel="1" Project="SocketDLL" Source="SocketDLL\SocketDLL.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="SocketDLL" Source="SocketDLL\SocketDLL.vcproj" Description="Done converting to new project file 'C:\ChihChung\RoboNavi\RobotNavi\SocketDLL\SocketDLL.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="SocketDLL" Source="SocketDLL\SocketDLL.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SLAMDLL" Source="SLAMDLL\SLAMDLL.vcproj" Description="Converting project file 'C:\ChihChung\RoboNavi\RobotNavi\SLAMDLL\SLAMDLL.vcproj'.">
+</Event><Event ErrorLevel="1" Project="SLAMDLL" Source="SLAMDLL\SLAMDLL.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="SLAMDLL" Source="SLAMDLL\SLAMDLL.vcproj" Description="Done converting to new project file 'C:\ChihChung\RoboNavi\RobotNavi\SLAMDLL\SLAMDLL.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="SLAMDLL" Source="SLAMDLL\SLAMDLL.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="JoyStickDLL" Source="JoyStickDLL\JoyStickDLL.vcproj" Description="Converting project file 'C:\ChihChung\RoboNavi\RobotNavi\JoyStickDLL\JoyStickDLL.vcproj'.">
+</Event><Event ErrorLevel="1" Project="JoyStickDLL" Source="JoyStickDLL\JoyStickDLL.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="JoyStickDLL" Source="JoyStickDLL\JoyStickDLL.vcproj" Description="Done converting to new project file 'C:\ChihChung\RoboNavi\RobotNavi\JoyStickDLL\JoyStickDLL.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="JoyStickDLL" Source="JoyStickDLL\JoyStickDLL.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="NavDLL" Source="NavDLL\NavDLL.vcproj" Description="Converting project file 'C:\ChihChung\RoboNavi\RobotNavi\NavDLL\NavDLL.vcproj'.">
+</Event><Event ErrorLevel="1" Project="NavDLL" Source="NavDLL\NavDLL.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="NavDLL" Source="NavDLL\NavDLL.vcproj" Description="Done converting to new project file 'C:\ChihChung\RoboNavi\RobotNavi\NavDLL\NavDLL.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="NavDLL" Source="NavDLL\NavDLL.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FilterDLL" Source="FilterDLL\FilterDLL.vcproj" Description="Converting project file 'C:\ChihChung\RoboNavi\RobotNavi\FilterDLL\FilterDLL.vcproj'.">
+</Event><Event ErrorLevel="1" Project="FilterDLL" Source="FilterDLL\FilterDLL.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="FilterDLL" Source="FilterDLL\FilterDLL.vcproj" Description="Done converting to new project file 'C:\ChihChung\RoboNavi\RobotNavi\FilterDLL\FilterDLL.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="FilterDLL" Source="FilterDLL\FilterDLL.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="POMDPDLL" Source="POMDPDLL\POMDPDLL.vcproj" Description="Converting project file 'C:\ChihChung\RoboNavi\RobotNavi\POMDPDLL\POMDPDLL.vcproj'.">
+</Event><Event ErrorLevel="1" Project="POMDPDLL" Source="POMDPDLL\POMDPDLL.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="POMDPDLL" Source="POMDPDLL\POMDPDLL.vcproj" Description="Done converting to new project file 'C:\ChihChung\RoboNavi\RobotNavi\POMDPDLL\POMDPDLL.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="POMDPDLL" Source="POMDPDLL\POMDPDLL.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="RobotNavi.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="RobotNavi.sln" Description="Converted">
+</Event></UpgradeLog>

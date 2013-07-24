@@ -10,7 +10,6 @@
 #include "NaviDraw.h"
 
 
-
 using namespace std;
 using namespace Geom2D;
 using namespace RobotTra;
@@ -52,7 +51,6 @@ NavDlg::NavDlg(CWnd* pParent /*=NULL*/)
 
 NavDlg::~NavDlg()
 {
-	this->hmp.~HMOMDP();
 	this->DWAtree.~TraTree();
 }
 
@@ -201,7 +199,6 @@ BEGIN_MESSAGE_MAP(NavDlg, CDialog)
 	ON_BN_CLICKED(IDC_OFFLINE, &NavDlg::OnBnClickedOffline)
 	ON_BN_CLICKED(IDC_SaveImg, &NavDlg::OnBnClickedSaveimg)
 	ON_BN_CLICKED(IDC_OFFLINE2, &NavDlg::OnBnClickedOffline2)
-	ON_BN_CLICKED(IDC_POMDP, &NavDlg::OnBnClickedPomdp)
 	ON_BN_CLICKED(IDOK, &NavDlg::OnBnClickedOk)
 END_MESSAGE_MAP()
 
@@ -231,7 +228,6 @@ void NavDlg::OnBnClickedCompute()
 	this->OnPaint();
 
 }
-
 
 void NavDlg::OnBnClickedExpand()
 {
@@ -489,21 +485,6 @@ void NavDlg::OnBnClickedOffline2()
 	this->OnPaint();
 }
 
-void NavDlg::OnBnClickedPomdp()
-{
-	// TODO: Add your control notification handler code here
-	CString str;
-	char solution[64];
-	double Uv;
-	double Lv;
-	this->GetDlgItemText(IDC_EDIT1,str);
-	double p = atof((LPCSTR)str);
-	planning_TS(p,hmp);
-	hmp.BELTreeOutput();
-
-	sprintf(solution,"%.2f, %.2f, action:%d",hmp.Uv,hmp.Lv,*(int*)(hmp.best_action));
-	this->SetDlgItemText(IDC_EDIT2,solution);
-}
 
 void NavDlg::OnBnClickedOk()
 {

@@ -12,7 +12,6 @@
 #include "MapDlg.h"
 #include "JoyDlg.h"
 #include "NavDlg.h"
-#include "DATMODlg.h"
 
 // RobotDlg dialog
 
@@ -37,7 +36,7 @@ class RobotDlg : public CDialog
 	friend DWORD WINAPI NAVI3_THREAD(LPVOID lpt);
 	friend DWORD WINAPI SLAM_THREAD(LPVOID lpt);
 	friend DWORD WINAPI DATMO_THREAD(LPVOID lpt);
-	friend DWORD WINAPI DATMO_THREAD_OFFLINE(LPVOID lpt);
+
 public:
 	RobotDlg(CWnd* pParent = NULL);   // standard constructor
 	virtual ~RobotDlg();
@@ -121,7 +120,6 @@ private:
 	//SLAM objects
 	ICPDlg* idlg;
 	MapDlg* mdlg;
-	DATMODlg* ddlg;
 	FILE* lout;
 	bool mapping;
 	Geom2D::Pose icpose;

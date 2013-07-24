@@ -7,7 +7,6 @@
 #include "DWA.h"
 #include "TraTree.h"
 #include "DWAstar.h"
-#include "HMOMDP.h"
 #include "TwoStateEx.h"
 
 // NavDlg dialog
@@ -40,10 +39,7 @@ public:
 // Dialog Data
 	enum { IDD = IDD_NAVDLG };
 
-////////////////////////////////////
-HMOMDP hmp;
 
-///////////////////////////////////
 private:
 	MFC_VIEWER viewer;
 	RobotTra::DWA* dwa;
@@ -88,7 +84,6 @@ public:
 	afx_msg void OnBnClickedOffline();
 	afx_msg void OnBnClickedSaveimg();
 	afx_msg void OnBnClickedOffline2();
-	afx_msg void OnBnClickedPomdp();
 	afx_msg void OnBnClickedOk();
 };
 
