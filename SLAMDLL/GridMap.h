@@ -26,7 +26,7 @@ public:
 
 	double getGrid(int w,int h){return GMAP[getidx(w,h)];}
 
-    double getLdist(int w,int h){
+    double getLdist(int w,int h){//
 		if(gridstate(w,h) != -2)//In the map
 			return LMAP[getidx(w,h)];
 		else
@@ -86,13 +86,10 @@ private:
 	std::vector<double> drange;
 	std::vector<double> drad;//Used for drawing grid map 
 
-
-
-
 	//Functions
 	inline int getidx(int w,int h){return h*width+w;}
 
-public:
+private:
 	double GMAP[Msize];//in log form
 	double LMAP[Msize];//distance
     Geom2D::Point NPs[Msize];//Nearest neighbor

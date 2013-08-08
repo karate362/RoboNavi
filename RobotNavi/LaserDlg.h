@@ -9,7 +9,7 @@ using namespace Robotics;
 // LaserDlg dialog
 
 #define DATA_LENGTH 541
-#define DEVICE_ADDR "192.168.0.1"
+#define DEVICE_ADDR "192.168.0.2"
 
 DWORD WINAPI READ_THREAD (LPVOID lpt);
 
